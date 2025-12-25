@@ -10,4 +10,15 @@
     <color name="kp_purple">#CC99FF</color>
     <color name="text_primary">#111111</color>
     <color name="text_secondary">#666666</color>
+
+    <color name="tone_blue">#0000FF</color>
+    <color name="tone_purple">#330066</color>
+    <color name="tone_black">#000000</color>
+
+    <color name="text_on_dark">#FFFFFF</color>
+    <color name="text_on_light">#111111</color>
+
+    <!-- Bottom nav tints -->
+    <color name="nav_active">#330066</color>
+    <color name="nav_inactive">#88000000</color>
 </resources>

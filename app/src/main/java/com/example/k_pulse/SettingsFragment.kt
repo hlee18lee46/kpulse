@@ -2,4 +2,4 @@ package com.example.k_pulse
 
 import androidx.fragment.app.Fragment
 
-class HomeFragment : Fragment(R.layout.fragment_home)
+class SettingsFragment : Fragment(R.layout.fragment_settings)

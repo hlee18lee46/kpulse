@@ -10,7 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Default screen
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragmentContainer, HomeFragment())
@@ -21,7 +20,8 @@ class MainActivity : AppCompatActivity() {
             val fragment = when (item.itemId) {
                 R.id.nav_home -> HomeFragment()
                 R.id.nav_concerts -> ConcertsFragment()
-                R.id.nav_charts -> ChartsFragment()
+                R.id.nav_calendar -> CalendarFragment()
+                R.id.nav_settings -> SettingsFragment()
                 else -> HomeFragment()
             }
 

@@ -6,23 +6,46 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <!-- Simple top strip (brand color) -->
-    <View
-        android:id="@+id/topStrip"
+    <!-- Gradient header (blue -> purple) -->
+    <LinearLayout
+        android:id="@+id/header"
         android:layout_width="0dp"
-        android:layout_height="8dp"
-        android:background="@color/kp_purple"
+        android:layout_height="86dp"
+        android:background="@drawable/bg_gradient_top"
+        android:orientation="vertical"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="12dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <!-- Screen content -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K-Pulse"
+            android:textColor="@color/text_on_dark"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Tours • Charts • Alerts"
+            android:textColor="@color/text_on_dark"
+            android:alpha="0.9"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <!-- Content area -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainer"
-        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/topStrip"
+        app:layout_constraintTop_toBottomOf="@id/header"
         app:layout_constraintBottom_toTopOf="@id/bottomNav"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -34,8 +57,8 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         app:menu="@menu/bottom_nav_menu"
-        app:itemIconTint="@color/kp_purple"
-        app:itemTextColor="@color/kp_purple"
+        app:itemIconTint="@color/bottom_nav_item_color"
+        app:itemTextColor="@color/bottom_nav_item_color"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

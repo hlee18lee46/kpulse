@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
         android:id="@+id/nav_home"
         android:title="Home"
@@ -11,7 +12,13 @@
         android:icon="@android:drawable/ic_menu_my_calendar" />
 
     <item
-        android:id="@+id/nav_charts"
-        android:title="Charts"
-        android:icon="@android:drawable/ic_menu_sort_by_size" />
+        android:id="@+id/nav_calendar"
+        android:title="Calendar"
+        android:icon="@android:drawable/ic_menu_month" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@android:drawable/ic_menu_preferences" />
+
 </menu>
